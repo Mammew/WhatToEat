@@ -1,10 +1,10 @@
 - Carbonara #3
 - Amatriciana #3
-- Uova strapazzate #3
+- Uova strapazzate #4
 - Frittata con verdure #2
 - Frittata con prosciutto #3
 - Risotto con zucchine (guangiale) #1
-- Pasta al sugo (soffritto) #5
+- Pasta al sugo (soffritto) #6
 - Pasta al pesto #2
 - Pizza #2
 - Svizzera #3
@@ -12,7 +12,7 @@
 - Alette di pollo #2
 - Carne rossa #2
 - Pesce #1
-- Pasta con salsiccia (sugo) #2
-- Riso ai formaggi #1
+- Pasta con salsiccia (sugo) #3
+- Riso ai formaggi #2
 - Risotto prosciutto e formaggio #2
 - Bruschetta condota con strachino e salsiccia mescolati insieme #1

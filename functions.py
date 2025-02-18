@@ -14,13 +14,8 @@ def funct(instance, result_label):
                         list2.append(list1[i])
 
         size = len(list2)
-
-        for i in range(size):
-            print(list2[i])
-
         num = random.randrange(size)
 
-        #print("\nThe extracted dish is::" + list2[num])
         extracted_dish = list2[num].split('#')[0]
         result_label.text = "The extracted dish is: " + extracted_dish
         file.close()
