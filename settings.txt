@@ -1,0 +1,1 @@
+{'setting1': 'franco', 'setting2': 'gay come', 'setting3': 'pippo'}

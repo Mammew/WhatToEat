@@ -4,10 +4,10 @@ from kivy.uix.label import Label
 from kivy.uix.button import Button
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.uix.image import Image
-from kivy.graphics import Color, Rectangle, RoundedRectangle
-from kivy.uix.relativelayout import RelativeLayout
+from kivy.graphics import Color, Rectangle#, RoundedRectangle
 import subprocess
 from functions import funct  # Importa la funzione dal file functions.py
+from settings import Settings  # Importa la classe Settings dal file settings.py
 
 class ChildApp(BoxLayout):
     def __init__(self, **kwargs):
@@ -57,16 +57,6 @@ class ChildApp(BoxLayout):
     def call_funct(self, instance):
         funct(instance, self.result_label)
 
-'''class IconButton(Button):
-    def __init__(self, icon_source, **kwargs):
-        super(IconButton, self).__init__(**kwargs)
-        self.size_hint = (None, None)
-        self.size = (50, 50)
-        self.background_normal = ''
-        self.background_color = (0, 0, 0, 0) 
-        self.icon = Image(source=icon_source)
-        self.add_widget(self.icon)
-'''
 
 class NavBar(BoxLayout):
     """Navbar in basso per la navigazione"""
@@ -104,7 +94,7 @@ class NavBar(BoxLayout):
 
     def execute_and_switch(self, screen_name, file_path):
         self.switch_screen(screen_name)
-        self.execute_file(file_path)
+        #self.execute_file(file_path)
         
 
 class ParentApp(App):
@@ -114,15 +104,15 @@ class ParentApp(App):
 
         # Crea le schermate
         home_screen = Screen(name="home")
-        home_screen.add_widget(ChildApp())
+        home_screen.add_widget(ChildApp()) 
         self.screen_manager.add_widget(home_screen)
 
         history_screen = Screen(name="history")
-        history_screen.add_widget(Label(text="History Screen"))
+        history_screen.add_widget(Label(text="History Screen")) # Aggiungere la classe che crea la pagina 'history'
         self.screen_manager.add_widget(history_screen)
 
         settings_screen = Screen(name="settings")
-        settings_screen.add_widget(Label(text="Settings Screen"))
+        settings_screen.add_widget(Settings()) # Aggiungere la classe che crea la pagina 'settings'
         self.screen_manager.add_widget(settings_screen)
 
         # Crea il layout principale
